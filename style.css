@@ -1313,19 +1313,31 @@ button {
 
 .social-links {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     margin-top: 20px;
 }
 
-
 .social-links a {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #533b4d;
+    width: 42px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background: #fff;
+    color: #3d2739;
+
+    border: 1px solid #eadcdf;
+    border-radius: 50%;
+
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #3d2739;
+    color: #fff;
+    transform: translateY(-3px);
 }
 
 
