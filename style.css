@@ -551,10 +551,9 @@ button {
 .marquee-track {
     display: flex;
     width: max-content;
-    animation: infiniteMarquee 30s linear infinite;
+    animation: infiniteMarquee 20s linear infinite;
     will-change: transform;
 }
-
 
 
 .marquee-group {
@@ -643,7 +642,7 @@ button {
 .social-section {
     max-width: 1250px;
     margin: auto;
-    padding: 90px 5% 0;
+    padding: 90px 5%;
 }
 
 
@@ -1211,7 +1210,33 @@ button {
 
 
 
+/* =========================================
+   SOCIAL
+========================================= */
 
+.social-section {
+    max-width: 1300px;
+}
+
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+.social-grid img {
+    height: 230px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+
+.social-grid img:hover {
+    transform: scale(1.03);
+}
 
 
 
@@ -1221,7 +1246,7 @@ button {
 
 .newsletter {
     max-width: 1150px;
-    margin: 0 auto 100px;
+    margin: 50px auto 100px;
     padding: 55px;
     border-radius: 30px;
     background: #fff0d7;
@@ -1313,36 +1338,19 @@ button {
 
 .social-links {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    gap: 8px;
     margin-top: 20px;
 }
 
+
 .social-links a {
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #533b4d;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background: #ffffff;
-    color: #3d2739;
-
-    border-radius: 50%;
-    font-size: 18px;
-
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: #e96b9c;
-    color: #ffffff;
-    transform: translateY(-3px);
-}
-
-.social-links a i {
-    display: block;
-    line-height: 1;
 }
 
 
@@ -1718,7 +1726,7 @@ button {
     }
 
     .newsletter {
-        margin: 0 5% 70px;
+        margin: 30px 5% 70px;
         padding: 35px 25px;
     }
 
@@ -1799,11 +1807,55 @@ button {
 
 }
 
+/* FINAL SOCIAL ICON FIX */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #3d2739;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #e96b9c;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.social-links a:first-child svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+.social-links a:nth-child(2) svg,
+.social-links a:nth-child(3) svg {
+    fill: currentColor;
+    stroke: none;
+}
+
+
 /* =========================================
-   FIXED RESPONSIVE MOBILE NAVIGATION
+   FINAL MOBILE NAVIGATION FIX
 ========================================= */
 
-/* Desktop */
 .nav-links {
     display: flex;
     align-items: center;
@@ -1814,54 +1866,48 @@ button {
     display: none !important;
 }
 
-/* Mobile & Tablet */
 @media (max-width: 1000px) {
 
-    /* Hide normal desktop navigation */
     .nav-links {
         display: none !important;
     }
 
-    /* Show hamburger */
     .menu-btn {
         display: flex !important;
         align-items: center;
         justify-content: center;
         width: 44px;
         height: 44px;
-        font-size: 22px;
         background: #ffffff;
         border: 1px solid #eadcdf;
         border-radius: 50%;
         color: #352534;
+        font-size: 22px;
         position: relative;
-        z-index: 1002;
+        z-index: 1004;
     }
 
-    /* Hide search on mobile */
     .search-btn {
-        display: none;
+        display: none !important;
     }
 
-    /* Mobile dropdown */
     .mobile-menu {
-        display: none !important;
         position: fixed;
         top: 78px;
         left: 0;
         right: 0;
         width: 100%;
+        display: none !important;
+        flex-direction: column;
         background: #fffaf7;
         border-top: 1px solid #f1e6e2;
         border-bottom: 1px solid #eadcdf;
-        padding: 12px 5% 20px;
-        flex-direction: column;
+        padding: 10px 5% 18px;
         gap: 0;
         z-index: 1001;
         box-shadow: 0 12px 30px rgba(61, 39, 57, 0.12);
     }
 
-    /* Open menu */
     .mobile-menu.active {
         display: flex !important;
     }
@@ -1886,25 +1932,13 @@ button {
         background: #fff0f5;
     }
 
-    /* Keep navbar above everything */
     .navbar {
         position: sticky;
         top: 0;
         z-index: 1002;
-        height: 78px;
-    }
-
-    .nav-actions {
-        gap: 8px;
-    }
-
-    .cart-btn,
-    .menu-btn {
-        flex-shrink: 0;
     }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
 
     .navbar {
@@ -1929,5 +1963,49 @@ button {
 
     .mobile-menu {
         top: 72px;
+    }
+}
+
+
+/* =========================================
+   SOCIAL GRID FINAL FIX
+========================================= */
+
+.social-grid a {
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.social-grid img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.social-grid a:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .social-grid img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 450px) {
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid img {
+        height: 250px;
     }
 }
