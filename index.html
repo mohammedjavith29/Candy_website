@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sweetie Candy | Taste the Happiness</title>
+
+    <meta
+        name="description"
+        content="Discover delicious premium candies, gummies, chocolates and lollipops."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     ANNOUNCEMENT BAR
+========================================= -->
+
+<div class="top-bar">
+
+    <p>
+        🍭 Free delivery on orders above ₹499
+    </p>
+
+</div>
+
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar">
+
+    <a href="#" class="logo">
+
+        <span class="logo-icon">🍭</span>
+
+        <span>Sweetie</span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#shop">Shop</a>
+
+        <a href="#categories">Categories</a>
+
+        <a href="#about">About</a>
+
+        <a href="#reviews">Reviews</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button class="search-btn">
+            🔍
+        </button>
+
+        <button
+            class="cart-btn"
+            onclick="openCart()"
+        >
+
+            🛒
+
+            <span id="cart-count">
+                0
+            </span>
+
+        </button>
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MOBILE MENU
+========================================= -->
+
+<div
+    class="mobile-menu"
+    id="mobile-menu"
+>
+
+    <a href="#home">Home</a>
+
+    <a href="#shop">Shop</a>
+
+    <a href="#categories">Categories</a>
+
+    <a href="#about">About</a>
+
+    <a href="#reviews">Reviews</a>
+
+</div>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <!-- Decorative shapes -->
+
+    <div class="hero-shape shape-one"></div>
+
+    <div class="hero-shape shape-two"></div>
+
+    <div class="hero-shape shape-three"></div>
+
+
+    <!-- Floating candies -->
+
+    <span class="floating-candy candy-one">
+        🍭
+    </span>
+
+    <span class="floating-candy candy-two">
+        🍬
+    </span>
+
+    <span class="floating-candy candy-three">
+        🍓
+    </span>
+
+    <span class="floating-candy candy-four">
+        🍫
+    </span>
+
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <div class="small-label">
+
+                ✨ MADE FOR HAPPY MOMENTS
+
+            </div>
+
+
+            <h1>
+
+                A Little
+                <span>Sweetness</span>
+                Goes A Long Way.
+
+            </h1>
+
+
+            <p>
+
+                Discover colorful candies, dreamy gummies
+                and delicious treats made to turn ordinary
+                moments into unforgettable memories.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#shop"
+                    class="btn btn-primary"
+                >
+
+                    Shop Sweetness
+                    <span>→</span>
+
+                </a>
+
+
+                <a
+                    href="#categories"
+                    class="btn btn-secondary"
+                >
+
+                    Explore Candy
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-trust">
+
+                <div class="avatars">
+
+                    <span>😊</span>
+                    <span>😍</span>
+                    <span>🥰</span>
+                    <span>😋</span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        10,000+
+                    </strong>
+
+                    <small>
+                        Happy candy lovers
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO IMAGE -->
+
+        <div class="hero-visual">
+
+            <div class="hero-circle"></div>
+
+
+            <div class="hero-image-wrapper">
+
+                <img
+                    src="images/coco.jpeg"
+                    alt="Colorful premium candys"
+                    class="hero-image"
+                >
+
+            </div>
+
+
+            <!-- Discount badge -->
+
+            <div class="discount-badge">
+
+                <span>
+                    UP TO
+                </span>
+
+                <strong>
+                    30%
+                </strong>
+
+                <small>
+                    OFF
+                </small>
+
+            </div>
+
+
+            <!-- Product floating card -->
+
+            <div class="floating-product-card">
+
+                <div class="mini-image">
+
+                    <img
+                        src="images/rainbo.jpeg"
+                        alt="rainbo"
+                    >
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Rainbow Mix
+                    </strong>
+
+                    <span>
+                        ⭐ 4.9 · 2k+ reviews
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MARQUEE
+========================================= -->
+
+<section class="marquee">
+
+    <div class="marquee-track">
+
+
+        <div class="marquee-group">
+
+            <span>🍭 SWEETNESS</span>
+
+            <span>🍬 PREMIUM CANDY</span>
+
+            <span>✨ MADE WITH LOVE</span>
+
+            <span>🎁 PERFECT GIFTS</span>
+
+            <span>🍫 DELICIOUS</span>
+
+            <span>🍓 FRESH FLAVORS</span>
+
+        </div>
+
+
+        <div
+            class="marquee-group"
+            aria-hidden="true"
+        >
+
+            <span>🍭 SWEETNESS</span>
+
+            <span>🍬 PREMIUM CANDY</span>
+
+            <span>✨ MADE WITH LOVE</span>
+
+            <span>🎁 PERFECT GIFTS</span>
+
+            <span>🍫 DELICIOUS</span>
+
+            <span>🍓 FRESH FLAVORS</span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BENEFITS
+========================================= -->
+
+<section class="benefits">
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            🍬
+        </div>
+
+        <div>
+
+            <h3>
+                Premium Quality
+            </h3>
+
+            <p>
+                Carefully selected ingredients
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            🚚
+        </div>
+
+        <div>
+
+            <h3>
+                Fast Delivery
+            </h3>
+
+            <p>
+                Sweetness delivered to you
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            🎁
+        </div>
+
+        <div>
+
+            <h3>
+                Perfect Gifts
+            </h3>
+
+            <p>
+                Make every celebration sweeter
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <div class="benefit-icon">
+            💖
+        </div>
+
+        <div>
+
+            <h3>
+                Made With Love
+            </h3>
+
+            <p>
+                Happiness in every bite
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SHOP SECTION
+========================================= -->
+
+<section
+    class="products-section"
+    id="shop"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                OUR FAVORITES
+            </span>
+
+            <h2>
+                Sweetest Best Sellers
+            </h2>
+
+        </div>
+
+
+        <a
+            href="#shop"
+            class="view-all"
+        >
+
+            View All
+            →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="products-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-tag">
+                    BESTSELLER
+                </span>
+
+                <button class="heart-btn">
+                    ♡
+                </button>
+
+                <img
+                    src="images/stawberry.jpeg"
+                    alt="Strawberry stawberry candy"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="stars">
+                    ★★★★★
+                    <span>
+                        (128)
+                    </span>
+                </div>
+
+                <h3>
+                    Strawberry Gummies
+                </h3>
+
+                <p>
+                    Soft, juicy & berrylicious
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹199
+                    </strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Strawberry Gummies',199)"
+                    >
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-tag new">
+                    NEW
+                </span>
+
+                <button class="heart-btn">
+                    ♡
+                </button>
+
+                <img
+                    src="images/rainbow.jpeg"
+                    alt="Rainbow rainbow lollipop"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="stars">
+                    ★★★★★
+                    <span>
+                        (94)
+                    </span>
+                </div>
+
+                <h3>
+                    Rainbow Lollipop
+                </h3>
+
+                <p>
+                    Colorful swirls of happiness
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹149
+                    </strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Rainbow Lollipop',149)"
+                    >
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-tag">
+                    FAVORITE
+                </span>
+
+                <button class="heart-btn">
+                    ♡
+                </button>
+
+                <img
+                    src="images/chocalate bites.jpeg"
+                    alt="Chocolate chocalate bites"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="stars">
+                    ★★★★★
+                    <span>
+                        (212)
+                    </span>
+                </div>
+
+                <h3>
+                    Chocolate Bites
+                </h3>
+
+                <p>
+                    Rich, creamy & irresistible
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹249
+                    </strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Chocolate Bites',249)"
+                    >
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <span class="product-tag pink">
+                    TRENDING
+                </span>
+
+                <button class="heart-btn">
+                    ♡
+                </button>
+
+                <img
+                    src="images/Cotton Candy.jpeg"
+                    alt="Pink cotton candy"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="stars">
+                    ★★★★★
+                    <span>
+                        (176)
+                    </span>
+                </div>
+
+                <h3>
+                    Dreamy Cotton Candy
+                </h3>
+
+                <p>
+                    Fluffy clouds of sweetness
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-btn"
+                        onclick="addToCart('Dreamy Cotton Candy',179)"
+                    >
+
+                        + Add
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CATEGORIES
+========================================= -->
+
+<section
+    class="categories-section"
+    id="categories"
+>
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            FIND YOUR FAVORITE
+        </span>
+
+        <h2>
+            Shop By Sweet Mood
+        </h2>
+
+        <p>
+            Whatever your mood, we have a candy for it.
+        </p>
+
+    </div>
+
+
+    <div class="categories-grid">
+
+
+        <a
+            href="#shop"
+            class="category-card category-large"
+        >
+
+            <img
+                src="images/gummies.jpeg"
+                alt="gummies"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    🍓
+                </span>
+
+                <h3>
+                    Gummies
+                </h3>
+
+                <p>
+                    Soft & chewy
+                </p>
+
+                <strong>
+                    Shop now →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+
+        <a
+            href="#shop"
+            class="category-card"
+        >
+
+            <img
+                src="images/lollipos.jpeg"
+                alt="lollipos"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    🍭
+                </span>
+
+                <h3>
+                    Lollipops
+                </h3>
+
+                <p>
+                    Colorful fun
+                </p>
+
+                <strong>
+                    Shop now →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+
+        <a
+            href="#shop"
+            class="category-card"
+        >
+
+            <img
+                src="images/choco.jpeg"
+                alt="choco"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    🍫
+                </span>
+
+                <h3>
+                    Chocolate
+                </h3>
+
+                <p>
+                    Rich & creamy
+                </p>
+
+                <strong>
+                    Shop now →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+
+        <a
+            href="#shop"
+            class="category-card"
+        >
+
+            <img
+                src="images/Cotton Candys.jpeg"
+                alt="Cotton candys"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    ☁️
+                </span>
+
+                <h3>
+                    Cotton Candy
+                </h3>
+
+                <p>
+                    Fluffy sweetness
+                </p>
+
+                <strong>
+                    Shop now →
+                </strong>
+
+            </div>
+
+        </a>
+        <a
+            href="#shop"
+            class="category-card"
+        >
+
+            <img
+                src="images/gems.jpeg"
+                alt="Gems"
+            >
+
+            <div class="category-overlay">
+
+                <span>
+                    ☁️
+                </span>
+
+                <h3>
+                    Gems
+                </h3>
+
+                <p>
+                    Dreamy Gems
+                </p>
+
+                <strong>
+                    Shop now →
+                </strong>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     OFFER SECTION
+========================================= -->
+
+<section class="offer-section">
+
+    <div class="offer-content">
+
+        <span class="offer-label">
+            🎁 LIMITED TIME OFFER
+        </span>
+
+        <h2>
+            Sweeten Your Day
+            <br>
+            With <span>30% OFF</span>
+        </h2>
+
+        <p>
+            Treat yourself or someone you love.
+            Use code <strong>SWEET30</strong>
+            at checkout.
+        </p>
+
+        <a
+            href="#shop"
+            class="btn btn-dark"
+        >
+
+            Grab The Deal
+            →
+
+        </a>
+
+    </div>
+
+
+    <div class="offer-candy">
+
+        <div>
+            🍭
+        </div>
+
+        <div>
+            🍬
+        </div>
+
+        <div>
+            🍫
+        </div>
+
+        <div>
+            🍓
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <div class="about-image">
+
+        <img
+            src="images/candy collection.jpeg"
+            alt="Colorful candy collection"
+        >
+
+        <div class="about-badge">
+
+            <strong>
+                100%
+            </strong>
+
+            <span>
+                Happiness
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <span class="eyebrow">
+            OUR STORY
+        </span>
+
+        <h2>
+            Candy Isn't Just
+            <span>Food.</span>
+            It's A Feeling.
+        </h2>
+
+        <p>
+            We believe the best moments in life deserve
+            something sweet. That's why we create colorful,
+            delicious treats designed to make you smile.
+        </p>
+
+        <p>
+            From childhood favorites to exciting new
+            flavors, every piece is packed with happiness.
+        </p>
+
+
+        <div class="about-stats">
+
+            <div>
+
+                <strong>
+                    10K+
+                </strong>
+
+                <span>
+                    Happy Customers
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    50+
+                </strong>
+
+                <span>
+                    Sweet Flavors
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    4.9
+                </strong>
+
+                <span>
+                    Customer Rating
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     REVIEWS
+========================================= -->
+
+<section
+    class="reviews-section"
+    id="reviews"
+>
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            SWEET WORDS
+        </span>
+
+        <h2>
+            Loved By Candy Lovers
+        </h2>
+
+    </div>
+
+
+    <div class="reviews-grid">
+
+
+        <article class="review-card">
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The gummies are absolutely amazing!
+                They arrived beautifully packed and
+                tasted even better than expected."
+            </p>
+
+            <div class="review-user">
+
+                <div class="user-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>
+                        Ananya
+                    </strong>
+
+                    <span>
+                        Verified Buyer
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="review-card featured-review">
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "I ordered a gift box for my friend's
+                birthday and she absolutely loved it.
+                Everything looked so beautiful!"
+            </p>
+
+            <div class="review-user">
+
+                <div class="user-avatar">
+                    R
+                </div>
+
+                <div>
+
+                    <strong>
+                        Rahul
+                    </strong>
+
+                    <span>
+                        Verified Buyer
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="review-card">
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Such a fun website and even better
+                candy. The chocolate bites are now
+                my absolute favorite."
+            </p>
+
+            <div class="review-user">
+
+                <div class="user-avatar">
+                    P
+                </div>
+
+                <div>
+
+                    <strong>
+                        Priya
+                    </strong>
+
+                    <span>
+                        Verified Buyer
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INSTAGRAM STYLE SECTION
+========================================= -->
+
+<section class="social-section">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            FOLLOW THE SWEETNESS
+        </span>
+
+        <h2>
+            @sweetie.candy
+        </h2>
+
+    </div>
+
+
+   
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     NEWSLETTER
+========================================= -->
+
+<section class="newsletter">
+
+    <div>
+
+        <span>
+            🍬 STAY IN THE SWEET LOOP
+        </span>
+
+        <h2>
+            Get 10% Off Your First Order
+        </h2>
+
+        <p>
+            Join our candy club for new flavors,
+            special offers and sweet surprises.
+        </p>
+
+    </div>
+
+
+    <form
+        onsubmit="subscribe(event)"
+    >
+
+        <input
+            type="email"
+            placeholder="Your email address"
+            required
+        >
+
+        <button type="submit">
+            Get My Discount
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+
+                <span class="logo-icon">
+                    🍭
+                </span>
+
+                Sweetie
+
+            </a>
+
+            <p>
+                Making life a little sweeter,
+                one candy at a time.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">📷</a>
+
+                <a href="#">📘</a>
+
+                <a href="#">🐦</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Shop
+            </h4>
+
+            <a href="#shop">
+                Best Sellers
+            </a>
+
+            <a href="#shop">
+                Gummies
+            </a>
+
+            <a href="#shop">
+                Chocolates
+            </a>
+
+            <a href="#shop">
+                Lollipops
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Help
+            </h4>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Delivery
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="#about">
+                Our Story
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Sweetie Candy. Made with 💖
+        </p>
+
+        <p>
+            Sweetness delivered to your door.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     CART DRAWER
+========================================= -->
+
+<div
+    class="cart-overlay"
+    id="cart-overlay"
+    onclick="closeCart()"
+></div>
+
+
+<aside
+    class="cart-drawer"
+    id="cart-drawer"
+>
+
+    <div class="cart-header">
+
+        <h2>
+            Your Sweet Cart 🍭
+        </h2>
+
+        <button onclick="closeCart()">
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cart-items"
+    >
+
+        <div class="empty-cart">
+
+            <div>
+                🛒
+            </div>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add something sweet!
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cart-total">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            onclick="checkout()"
+        >
+
+            Proceed to Checkout →
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
