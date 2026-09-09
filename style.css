@@ -1313,6 +1313,7 @@ button {
 
 .social-links {
     display: flex;
+    align-items: center;
     gap: 12px;
     margin-top: 20px;
 }
@@ -1324,20 +1325,24 @@ button {
     align-items: center;
     justify-content: center;
 
-    background: #fff;
+    background: #ffffff;
     color: #3d2739;
 
-    border: 1px solid #eadcdf;
     border-radius: 50%;
+    font-size: 18px;
 
-    font-size: 17px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    background: #3d2739;
-    color: #fff;
+    background: #e96b9c;
+    color: #ffffff;
     transform: translateY(-3px);
+}
+
+.social-links a i {
+    display: block;
+    line-height: 1;
 }
 
 
